@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyWebClass.org - Sign Up for Updates</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f8fa;
+			color: #4c4c4c;
+			text-align: center;
+			padding: 20px;
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+			color: #1e90ff;
+		}
+		p {
+			font-size: 20px;
+			margin-bottom: 30px;
+			color: #4c4c4c;
+			line-height: 1.5;
+			text-align: justify;
+			text-justify: inter-word;
+			padding: 0 10%;
+		}
+		form {
+			display: inline-block;
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+			text-align: left;
+		}
+		label {
+			font-size: 18px;
+			display: block;
+			margin-bottom: 10px;
+			color: #4c4c4c;
+		}
+		input[type="email"], input[type="text"] {
+			font-size: 18px;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		input[type="submit"] {
+			font-size: 20px;
+			padding: 10px 30px;
+			background-color: #1e90ff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.2s ease-in-out;
+		}
+		input[type="submit"]:hover {
+			background-color: #69c3ff;
+		}
+	</style>
+</head>
+<body>
+	<h1>Join Our Learning Community!</h1>
+	<p>Are you looking to learn and grow in the exciting world of technology? Then MyWebClass.org is the perfect place for you! Our community of passionate teachers, students, and learners share a common goal of advancing their skills and knowledge in technology. </p>
+	<p>Join our email newsletter to receive regular updates on the latest resources, blogs, and tips for learning new skills and staying up-to-date in the tech world. Plus, by joining our community, you'll have the opportunity to share your own insights and ideas! So don't wait, sign up now and become a part of our amazing learning community! </p>
+	<form action="your-server-side-script.php" method="post">
+		<label for="name">Your Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name" required>
+		<label for="email">Your Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email" required>
+		<input type="submit" value="Join Now">
+	</form>
+</body>
+</html>
