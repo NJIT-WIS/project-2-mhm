@@ -1,46 +1,35 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
+import styles from '../styles/global.css'
 
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
-    <Layout home>
+    <>
       <Head>
-        <title>{siteTitle}</title>
+        <title>myWebClass.org - Learn Tech Skills</title>
+        <link rel="stylesheet" type="text/css" href="/styles/Homepage.css"/>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+      <header>
+        <h1>myWebClass.org</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="intro" className={styles.intro}>
+          <h2>Learn Tech Skills with myWebClass.org</h2>
+          <p>Are you a student or a teacher looking to improve your tech skills? Look no further than myWebClass.org. We offer a wide range of courses in programming, web development, graphic design, and more. Our courses are designed to help you succeed in your career or your studies.</p>
+          <p>With a monthly subscription, you can access all of our courses at any time. We offer flexible learning options to fit your schedule and your budget.</p>
+          <a href="#" className={`${styles.cta} cta`}>Get Started Today</a>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; myWebClass.org 2023. All rights reserved.</p>
+      </footer>
+    </>
   )
-}
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
 }
