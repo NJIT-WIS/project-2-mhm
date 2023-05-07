@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@angular/core": "^16.0.0",
+    "@angular/router": "^16.0.0",
     "csv-parser": "^3.0.0",
     "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",
