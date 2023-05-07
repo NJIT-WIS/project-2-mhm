@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@angular/core':
+    specifier: ^16.0.0
+    version: 16.0.0(rxjs@7.8.1)(zone.js@0.13.0)
   csv-parser:
     specifier: ^3.0.0
     version: 3.0.0
@@ -62,6 +65,18 @@ devDependencies:
     version: 0.12.5
 
 packages:
+
+  /@angular/core@16.0.0(rxjs@7.8.1)(zone.js@0.13.0):
+    resolution: {integrity: sha512-scppDxtXubum6ZiGu3ogmReBtMuA5XXk5FL3YKLb3c9O7q9Z5PC8KNQ6SsaOwEb6oW+0BWXMV698p/zmd0J4tA==}
+    engines: {node: ^16.14.0 || >=18.10.0}
+    peerDependencies:
+      rxjs: ^6.5.3 || ^7.4.0
+      zone.js: ~0.13.0
+    dependencies:
+      rxjs: 7.8.1
+      tslib: 2.5.0
+      zone.js: 0.13.0
+    dev: false
 
   /@next/env@13.4.1:
     resolution: {integrity: sha512-eD6WCBMFjLFooLM19SIhSkWBHtaFrZFfg2Cxnyl3vS3DAdFRfnx5TY2RxlkuKXdIRCC0ySbtK9JXXt8qLCqzZg==}
@@ -1629,6 +1644,12 @@ packages:
     engines: {node: '>=10.0.0'}
     dev: true
 
+  /rxjs@7.8.1:
+    resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
+    dependencies:
+      tslib: 2.5.0
+    dev: false
+
   /sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
@@ -2045,6 +2066,12 @@ packages:
 
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+    dev: false
+
+  /zone.js@0.13.0:
+    resolution: {integrity: sha512-7m3hNNyswsdoDobCkYNAy5WiUulkMd3+fWaGT9ij6iq3Zr/IwJo4RMCYPSDjT+r7tnPErmY9sZpKhWQ8S5k6XQ==}
+    dependencies:
+      tslib: 2.5.0
     dev: false
 
   /zwitch@2.0.4:
