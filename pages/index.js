@@ -3,6 +3,15 @@ import Link from 'next/link';
 import NavMenu from '../components/NavMenu';
 import Footer from '../components/Footer';
 import styles from '../styles/global.module.css';
+import React from 'react'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  InstagramShareButton,
+  InstagramIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+} from 'next-share';
 
 export default function Home() {
   return (
@@ -23,8 +32,24 @@ export default function Home() {
             Sign Up for Updates
           </Link>
         </section>
+        <section>
+        <h1>Share On Social Media!</h1>
+      <FacebookShareButton
+        url={'https://www.facebook.com/'} >
+        <FacebookIcon size={32} round />
+      </FacebookShareButton>
+      <InstagramShareButton
+        url={'https://www.instagram.com/'} >
+        <PinterestIcon size={32} round />
+      </InstagramShareButton>
+      <LinkedinShareButton
+        url={'https://www.linkedin.com/home'} >
+        <LinkedinIcon size={32} round />
+      </LinkedinShareButton>
+        </section>
       </main>
       <Footer />
     </div>
+    
   );
 }
