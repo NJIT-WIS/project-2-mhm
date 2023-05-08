@@ -1,37 +1,37 @@
 .navMenu {
-  background-color: #ADD8E6;
-  color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+background-color: #3498db;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
 }
 
 .navMenu ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
 }
 
 .navMenu li:not(:last-child) {
-  margin-right: 1rem;
+margin-right: 1rem;
 }
 
 .navMenu a {
-  color: #000;
-  text-decoration: none;
-  font-size: 1.2rem;
+color: #fff;
+text-decoration: none;
+font-size: 1.2rem;
 }
 
 .navMenu a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 .navMenu .signup {
-  background-color: purple;
-  color: #fff;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
+background-color: #2980b9;
+color: #fff;
+border-radius: 4px;
+padding: 0.5rem 1rem;
+text-decoration: none;
 }

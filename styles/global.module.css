@@ -1,6 +1,39 @@
-.main-section {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-  background-color: red;
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Global Styles */
+.webBody{
+  background-color: #f2f5fa;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
 }
+
+.webBody h1 {
+  color: #333;
+  font-weight: bold;
+}
+.webBody a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.webBody a:hover {
+  text-decoration: underline;
+}
+
+.webBody button {
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.webBody button:hover {
+  background-color: #2980b9;
+}
+
