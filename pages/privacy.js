@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import NavMenu from '../components/navMenu';
+import NavMenu from '../components/NavMenu';
 
 export default function Blog() {
   return (
