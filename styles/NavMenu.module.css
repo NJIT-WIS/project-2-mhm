@@ -1,6 +1,6 @@
 .navMenu {
 background-color: #3498db;
-color: #fff;
+color: white;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -8,6 +8,7 @@ padding: 1rem;
 }
 
 .navMenu ul {
+color: white;
 display: flex;
 list-style: none;
 margin: 0;
@@ -19,19 +20,12 @@ margin-right: 1rem;
 }
 
 .navMenu a {
-color: #fff;
+color: white;
 text-decoration: none;
 font-size: 1.2rem;
 }
 
 .navMenu a:hover {
-text-decoration: underline;
-}
-
-.navMenu .signup {
-background-color: #2980b9;
-color: #fff;
-border-radius: 4px;
-padding: 0.5rem 1rem;
 text-decoration: none;
+color: black;
 }
