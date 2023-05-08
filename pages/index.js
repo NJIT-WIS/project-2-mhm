@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import NavMenu from '../components/NavMenu';
 import Footer from '../components/Footer';
-import style from '../styles/global.module.css';
+import styles from '../styles/global.module.css';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <header>
         <h1>MyWebClass.org</h1>
       </header>
-      <main className={styles.web-body}>
+      <main className={styles.webBody}>
         <section>
           <h2>Learn Tech Skills with MyWebClass.org</h2>
           <p>Are you a student or a teacher looking to improve your tech skills? Look no further than MyWebClass.org. We offer a wide range of courses in programming, web development, graphic design, and more. Our courses are designed to help you succeed in your career or your studies.</p>

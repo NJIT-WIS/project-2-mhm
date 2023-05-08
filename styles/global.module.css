@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 /* Global Styles */
-.web-body {
+.webBody{
   background-color: #f2f5fa;
   color: #333;
   font-family: sans-serif;
@@ -10,20 +10,20 @@
   margin: 0;
 }
 
-.web-body h1 {
+.webBody h1 {
   color: #333;
   font-weight: bold;
 }
-.web-body a {
+.webBody a {
   color: #3498db;
   text-decoration: none;
 }
 
-.web-body a:hover {
+.webBody a:hover {
   text-decoration: underline;
 }
 
-.web-body button {
+.webBody button {
   background-color: #3498db;
   border: none;
   border-radius: 4px;
@@ -33,7 +33,7 @@
   padding: 0.5rem 1rem;
 }
 
-.web-body button:hover {
+.webBody button:hover {
   background-color: #2980b9;
 }
 
