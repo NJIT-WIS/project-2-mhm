@@ -36,15 +36,15 @@ export default function Home() {
         <h1>Share On Social Media!</h1>
       <FacebookShareButton
         url={'https://www.facebook.com/'} >
-        <FacebookIcon size={33} round />
+        <FacebookIcon size={32} round />
       </FacebookShareButton>
       <InstagramShareButton
         url={'https://www.instagram.com/'} >
-        <InstagramIcon size={33} round />
+        <InstagramIcon size={32} round />
       </InstagramShareButton>
       <LinkedinShareButton
         url={'https://www.linkedin.com/home'} >
-        <LinkedinIcon size={33} round />
+        <LinkedinIcon size={32} round />
       </LinkedinShareButton>
         </section>
       </main>
