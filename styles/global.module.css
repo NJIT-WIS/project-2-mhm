@@ -3,7 +3,7 @@
 
 /* Global Styles */
 .webBody{
-  background-color: #f2f5fa;
+  background-color: #e2f5fa;
   color: #333;
   font-family: sans-serif;
   font-size: 16px;
@@ -15,7 +15,7 @@
   font-weight: bold;
 }
 .webBody a {
-  color: #3498db;
+  color: #white;
   text-decoration: none;
 }
 

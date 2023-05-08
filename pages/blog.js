@@ -4,17 +4,16 @@ import NavMenu from '../components/NavMenu';
 
 export default function Blog() {
   return (
-    <div>
+    <div className={styles.webBody}>
       <Head>
-        <title>My Blog - Welcome</title>
+        <title>Next.js Blog</title>
       </Head>
-      <h1>Welcome to My Blog</h1>
-      <ul>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/story">Courses</Link></li>
-        <li><Link href="/blog">blog</Link></li>
-        <li><Link href="/signup">Contact</Link></li>
-      </ul>
+      <NavMenu />
+      <main>
+        <h1>Latest Articles</h1>
+        <BlogCards />
+      </main>
+      <Footer />
     </div>
   );
 }
