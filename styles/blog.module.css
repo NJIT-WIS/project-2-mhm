@@ -13,7 +13,7 @@
 }
 
 .articleCard {
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -29,8 +29,22 @@
   height: 200px;
   object-fit: cover;
   width: 100%;
+  color: #0071c5;
+}
+
+.articleCard a:hover {
+    color: #0071c5;
+    text-decoration: underline;
 }
 
 .articleCard div {
   padding: 1rem;
+}
+
+.excerpt{
+  color: #0071c5;
+}
+
+.author{
+  color: #0071c5;
 }
