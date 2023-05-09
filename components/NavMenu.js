@@ -11,6 +11,7 @@ export default function NavMenu() {
         <li><Link href="/story">Story</Link></li>
         <li><Link href="/blog">Blog</Link></li>
         <li><Link href="/signup">Sign Up</Link></li>
+        <li><Link href="/privacy">Privacy Policy</Link></li>
       </ul>
     </nav>
   )

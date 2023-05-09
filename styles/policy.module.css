@@ -1,0 +1,61 @@
+.privPol {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.privPol h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #0071c5;
+}
+
+.privPol h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: #0071c5;
+}
+
+.privPol p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.privPol ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.privPol a {
+  color: #0071c5;
+}
+
+.privPol a:hover {
+  text-decoration: underline;
+}
+
+.privPol .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0071c5;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.privPol .btn:hover {
+  background-color: #005ea2;
+}
