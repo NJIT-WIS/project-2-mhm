@@ -1,20 +1,22 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import NavMenu from '../components/NavMenu';
+import Footer from '../components/Footer';
+import styles from '../styles/global.module.css';
+import Policy from '../components/Policy';
 
-export default function Blog() {
+export default function Privacy() {
   return (
-    <div>
+    <div className={styles.webBody}>
       <Head>
-        <title>My Blog - Welcome</title>
+        <title>MyWebClass Privacy Policy</title>
       </Head>
-      <h1>Welcome to My Blog</h1>
-      <ul>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/story">Courses</Link></li>
-        <li><Link href="/blog">blog</Link></li>
-        <li><Link href="/signup">Contact</Link></li>
-      </ul>
+      <NavMenu />
+      <main>
+        <Policy />
+      </main>
+      <Footer />
     </div>
   );
 }
+
