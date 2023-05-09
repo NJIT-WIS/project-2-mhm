@@ -6,12 +6,13 @@ export default function Home() {
   return (
     <>
       <NavMenu />
-      <Head>
-        <title>MyWebClass.org - Learn Tech Skills</title>
-      </Head>
+  <Head>
+  <title>MyWebClass.org - Learn Tech Skills</title>
+</Head>
+
+
       <header>
         <h1>MyWebClass.org</h1>
-
       </header>
       <main>
         <section>
