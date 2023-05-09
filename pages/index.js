@@ -3,6 +3,7 @@ import Link from 'next/link';
 import NavMenu from '../components/NavMenu';
 import Footer from '../components/Footer';
 import styles from '../styles/global.module.css';
+import logo from '/images/Earth.png';
 
 export default function Home() {
   return (

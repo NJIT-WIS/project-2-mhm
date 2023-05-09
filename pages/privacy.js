@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import NavMenu from '../components/NavMenu';
+import styles from '../styles/global.module.css';
 
 export default function Blog() {
   return (
