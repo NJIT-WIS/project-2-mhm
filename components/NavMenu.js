@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/global.module.css';
+import styles from '../styles/NavMenu.module.css';
 
 export default function NavMenu() {
   return (
