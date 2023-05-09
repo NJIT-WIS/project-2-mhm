@@ -2,31 +2,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 /* Global Styles */
 .webBody{
-  background-color: #e2f5fa;
+  background-color: #d2f5fa;
   color: #333;
-  font-family: Times New Roman;
+  font-family: Arial;
   font-size: 16px;
   margin: 0;
 }
 
 .webBody h1 {
-  color: #333;
+  color: #0071c5;
   font-weight: bold;
 }
+
+.webBody h2 {
+  color: #0071c5;
+  font-weight: bold;
+}
+
+.webBody h3 {
+  color: #0071c5;
+  font-weight: bold;
+}
+
+.webBody h4 {
+  color: #0071c5;
+  font-weight: bold;
+}
+
+.webBody h5 {
+  color: #0071c5;
+  font-weight: bold;
+}
+
+.webBody h6 {
+  color: #0071c5;
+  font-weight: bold;
+}
+
 .webBody a {
   color: #white;
   text-decoration: none;
 }
 
 .webBody a:hover {
-  text-decoration: underline;
+    color: #d2f5fa;
+    text-decoration: underline;
 }
 
 .webBody button {
   background-color: #3498db;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: #0071c5;
   cursor: pointer;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -34,78 +61,4 @@
 
 .webBody button:hover {
   background-color: #2980b9;
-}
-
-/* style for the navigation bar*/
-.navMenu {
-  font-family: Times New Roman;
-  background-color: navy;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  list-style: none;
-  flex-wrap: wrap; /* Add this property to wrap the items on smaller screens */
-}
-
-.navMenu ul {
-  color: white;
-  list-style: none;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  text-align: center; /* Add this property to center the list items */
-}
-
-.navMenu ul li {
-  text-color: white;
-  font-size: 1.4em;
-  list-style: none;
-  display: inline-block;
-  margin: 0;
-}
-
-.navMenu a {
-  color: white;
-  list-style: none;
-  text-decoration: none;
-  font-size: 2 rem;
-  padding: 0.5rem 1rem; /* Add some padding to make the links easier to click */
-}
-.navMenu {
-  font-family: Times New Roman;
-  background-color: navy;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  list-style: none;
-  flex-wrap: wrap; /* Add this property to wrap the items on smaller screens */
-}
-
-.navMenu ul {
-  color: white;
-  list-style: none;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  text-align: center; /* Add this property to center the list items */
-}
-
-.navMenu ul li {
-  text-color: white;
-  font-size: 1.4em;
-  list-style: none;
-  display: inline-block;
-  margin: 0;
-}
-
-.navMenu a {
-  color: white;
-  list-style: none;
-  text-decoration: none;
-  font-size: 2 rem;
-  padding: 0.5rem 1rem; /* Add some padding to make the links easier to click */
 }
