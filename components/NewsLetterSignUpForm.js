@@ -1,4 +1,9 @@
 import { useRef } from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import NavMenu from '../components/NavMenu';
+import Footer from '../components/Footer';
+import styles from '../styles/global.module.css';
 
 export default function NewsLetterSignUpForm() {
   const inputRef = useRef(null);

@@ -8,9 +8,11 @@ export default function Home() {
   return (
     <div className={styles.webBody}>
       <NavMenu />
-      <Head>
-        <title>MyWebClass.org - Learn Tech Skills</title>
-      </Head>
+  <Head>
+  <title>MyWebClass.org - Learn Tech Skills</title>
+</Head>
+
+
       <header>
         <h1>MyWebClass.org</h1>
       </header>
