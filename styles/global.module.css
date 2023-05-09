@@ -40,13 +40,8 @@
 }
 
 .webBody a {
-  color: #white;
+  color: white;
   text-decoration: none;
-}
-
-.webBody a:hover {
-    color: #d2f5fa;
-    text-decoration: underline;
 }
 
 .webBody button {

@@ -11,8 +11,6 @@ export default function Home() {
   <Head>
   <title>MyWebClass.org - Learn Tech Skills</title>
 </Head>
-
-
       <header>
         <h1>MyWebClass.org</h1>
       </header>
