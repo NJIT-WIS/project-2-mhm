@@ -12,14 +12,6 @@ export default function SignUp() {
         <title>MyWebClass.org - Sign Up for Updates</title>
         <meta name="description" content="Join our learning community and receive regular updates on the latest resources, blogs, and tips for learning new skills and staying up-to-date in the tech world." />
       </Head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TF72BVCT9P"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)};
-      gtag('js', new Date());
-
-      gtag('config', 'G-TF72BVCT9P');
-    </script>
       <h1>Join Our Learning Community!</h1>
       <p>Are you looking to learn and grow in the exciting world of technology? Then MyWebClass.org is the perfect place for you! Our community of passionate teachers, students, and learners share a common goal of advancing their skills and knowledge in technology. </p>
       <p>Join our email newsletter to receive regular updates on the latest resources, blogs, and tips for learning new skills and staying up-to-date in the tech world. Plus, by joining our community, you'll have the opportunity to share your own insights and ideas! So don't wait, sign up now and become a part of our amazing learning community! </p>
@@ -30,6 +22,18 @@ export default function SignUp() {
         <input type="email" id="email" name="email" placeholder="Enter your email" required />
         <input type="submit" value="Join Now" />
       </form>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-TF72BVCT9P"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)};
+            gtag('js', new Date());
+
+            gtag('config', 'G-TF72BVCT9P');
+          `,
+        }}
+      />
     </>
   );
 }
