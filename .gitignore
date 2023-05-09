@@ -27,3 +27,6 @@ yarn-error.log*
 /playwright-report/
 /playwright/.cache/
 .vercel
+/test-results/
+/playwright-report/
+/playwright/.cache/
