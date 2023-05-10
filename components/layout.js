@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
 
-import styles from './layout.module.css'
+import styles from '..styles/global.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
