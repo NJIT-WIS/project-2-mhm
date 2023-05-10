@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-color: #c7e6f5;
   color: #333;
 }
 
 .navMenu img {
-  height: 40px;
+  height: 60px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -25,10 +25,11 @@
 }
 
 .navMenu a {
-  color: #333;
+  color: #4d87c7;
   font-size: 1rem;
   text-decoration: none;
   padding: 1rem;
+  font-weight: bold;
 }
 
 /* Optional additional styling for the webBody class */
@@ -55,10 +56,11 @@
 }
 
 .webBody .navMenu a {
-  color: #fff;
+  color: #4d87c7;
   font-size: 1.2rem;
   text-decoration: none;
   padding: 1rem;
+  font-weight: bold;
 }
 
 .webBody .navMenu a:hover {

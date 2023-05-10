@@ -4,13 +4,13 @@
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 2rem 0;
+padding: 1rem 0;
 background-color: #c7e6f5;
 color: #333;
 }
 
 .footerLogo img {
-height: 40px;
+height: 50px;
 margin-left: 1rem;
 margin-right: 1rem;
 }
