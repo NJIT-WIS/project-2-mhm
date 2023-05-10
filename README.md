@@ -1,4 +1,4 @@
-# Project 2 (mywebclass.org)
+# Project 2 
 Please READ everything I am giving you and everyone needs to submit in Canvas.
 ## Install Instructions
 **Run:**
