@@ -1,5 +1,3 @@
-process.env.CHROME_PATH = '/Users/mithilpatel/Library/Application Support/Google/Chrome';
-
 // Import necessary modules and functions
 const { defineConfig, devices } = require('@playwright/test');
 const dotenv = require('dotenv');
