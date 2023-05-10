@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import menustyles from '../styles/NavMenu.module.css';
-import styles from '../styles/global.module.css';
+import styles from '../styles/NavMenu.module.css';
+/*import styles from '../styles/global.module.css';*/
 import logo from '../images/earth.png';
 
 export default function NavMenu() {
