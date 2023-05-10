@@ -2,27 +2,25 @@ import Head from 'next/head';
 import Link from 'next/link';
 import NavMenu from '../components/NavMenu';
 import Footer from '../components/Footer';
+import HeroBanner from '../components/HeroBanner';
 import styles from '../styles/global.module.css';
 
 export default function Home() {
   return (
     <div className={styles.webBody}>
       <NavMenu />
-  <Head>
-  <title>MyWebClass.org - Learn Tech Skills</title>
-</Head>
-      <header>
-        <h1>MyWebClass.org</h1>
-      </header>
+      <Head>
+        <title>MyWebClass</title>
+      </Head>
+      <HeroBanner />
       <main>
         <section>
-          <h2>Learn Tech Skills with MyWebClass.org</h2>
-          <p>Looking to improve your tech skills? Look no further!</p>
-          <p>Our courses are designed to help you succeed in your career or your studies.</p>
+          <h2>Current Events and Tech Breakthroughs</h2>
+          <p>Read and write articles about recent tech breakthroughs and how it can better the world.</p>
+          <p>MyWebClass aims to be a top distributor in tech news, for the people.</p>
         </section>
       </main>
       <Footer />
     </div>
-
   );
 }

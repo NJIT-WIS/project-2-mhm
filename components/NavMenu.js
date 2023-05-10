@@ -9,8 +9,8 @@ export default function NavMenu() {
       <img src={require('../images/earth.png')} alt="Logo" />
       <ul>
         <li><Link href="/">Home</Link></li>
-        <li><Link href="/story">Story</Link></li>
         <li><Link href="/blog">Blog</Link></li>
+        <li><Link href="/story">About Us</Link></li>
         <li><Link href="/signup">Sign Up</Link></li>
       </ul>
     </nav>
