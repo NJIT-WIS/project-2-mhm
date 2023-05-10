@@ -13,10 +13,10 @@ jobs:
       options: --cpus 2 --memory 4G --user root
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: "16.x"
 
@@ -47,7 +47,7 @@ jobs:
         run: lighthouse http://localhost:3000 --output html --output-path $(pwd)/test-results/report.html --chrome-flags="--headless --no-sandbox --disable-gpu" --chrome-path=/usr/bin/chromium-browser
 
       - name: Upload report, screenshots and videos of failed tests
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: test-results
           path: ./test-results
