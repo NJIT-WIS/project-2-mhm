@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import NavMenu from '../components/NavMenu';
 import Footer from '../components/Footer';
-import HeroBanner from '../components/HeroBanner';
+import HeroBanner from '../components/heroBanner';
 import styles from '../styles/global.module.css';
 
 export default function Home() {

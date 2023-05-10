@@ -1,6 +1,6 @@
 import '../styles/global.module.css';
 import styles from '../styles/NavMenu.module.css';
-import Layout from '../components/Layout'
+import Layout from '../components/layout';
 import Script from "next/script"
 import { useRouter } from 'next/router';
 import { useEffect } from "react";
