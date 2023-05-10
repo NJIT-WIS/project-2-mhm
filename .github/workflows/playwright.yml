@@ -23,7 +23,8 @@ jobs:
       - name: Install dependencies
         run: |
           apt-get update
-          apt-get install -y libgbm-dev chromium-browser
+          apt-get install -y libgbm-dev chromium-bsu
+          export npm_config_unsafe_perm=true
           npm ci
           npx playwright install chromium
           npm install -g lighthouse
