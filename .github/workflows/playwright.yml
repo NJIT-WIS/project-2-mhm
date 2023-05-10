@@ -27,7 +27,7 @@ jobs:
           export npm_config_unsafe_perm=true
           npm ci
           npx playwright install chromium
-          npm install -g chrome-launcher axe-core chromium wait-on
+          npm install -g lighthouse chrome-launcher axe-core chromium wait-on
           npx playwright install-deps
           npm run build --turbo
 
