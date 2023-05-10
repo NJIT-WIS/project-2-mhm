@@ -5,7 +5,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 1rem 0;
-background-color: #c7e6f5;
+background-color: rgba(153, 204, 255, 0.8);
 color: #333;
 }
 
@@ -31,6 +31,7 @@ color: #333;
 font-size: 1rem;
 text-decoration: none;
 padding: 1rem;
+font-weight: bold;
 }
 
 .footerBottom {

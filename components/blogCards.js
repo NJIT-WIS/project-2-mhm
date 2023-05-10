@@ -4,52 +4,90 @@ import styles from '../styles/blog.module.css';
 const articles = [
   {
     id: 1,
-    title: 'Getting Started with Next.js',
-    author: 'John Doe',
+    title: 'Quantum Computing',
+    author: 'Sarah Lee',
     date: 'May 1, 2023',
-    image: '/nextjs-blog-article-1.jpg',
-    excerpt: 'In this article, we will cover the basics of getting started with Next.js and building your first Next.js app.',
-    url: '/articles/getting-started-with-nextjs',
+    image: '/article-1.jpg',
+    url: '/articles/quantum-computing',
   },
   {
     id: 2,
-    title: 'Next.js vs. Create React App',
-    author: 'Jane Smith',
+    title: 'The Rise of Artificial Intelligence',
+    author: 'James Chen',
     date: 'May 2, 2023',
-    image: '/nextjs-blog-article-2.jpg',
-    excerpt: 'If you are trying to decide between Next.js and Create React App for your next project, this article will help you make an informed decision.',
-    url: '/articles/nextjs-vs-create-react-app',
+    image: '/article-2.jpg',
+    url: '/articles/artificial-intelligence',
   },
   {
     id: 3,
-    title: 'Building a Blog with Next.js and Markdown',
-    author: 'Bob Johnson',
+    title: '5G Networks: The Next Generation',
+    author: 'Linda Kim',
     date: 'May 3, 2023',
-    image: '/nextjs-blog-article-3.jpg',
-    excerpt: 'In this article, we will show you how to build a blog using Next.js and Markdown, making it easy to create and manage your blog content.',
-    url: '/articles/building-a-blog-with-nextjs-and-markdown',
+    image: '/article-3.jpg',
+    url: '/articles/5g-networks',
   },
+  {
+    id: 4,
+    title: 'Blockchain: Beyond Cryptocurrencies',
+    author: 'David Park',
+    date: 'May 4, 2023',
+    image: '/article-4.jpg',
+    url: '/articles/blockchain',
+  },
+  {
+    id: 5,
+    title: 'Virtual and Augmented Reality',
+    author: 'Grace Wong',
+    date: 'May 5, 2023',
+    image: '/article-5.jpg',
+    url: '/articles/vr-ar',
+  },
+  {
+    id: 6,
+    title: 'The Power of Cloud Computing',
+    author: 'Jonathan Lee',
+    date: 'May 6, 2023',
+    image: '/article-6.jpg',
+    url: '/articles/cloud-computing',
+  },
+  {
+    id: 7,
+    title: 'The Future of Cybersecurity',
+    author: 'Amy Lee',
+    date: 'May 7, 2023',
+    image: '/article-7.jpg',
+    url: '/articles/cybersecurity',
+  },
+  {
+    id: 8,
+    title: 'The Legitimacy of Self-Driving Cars',
+    author: 'Harold Drive',
+    date: 'May 8, 2023',
+    image: '/article-8.jpg',
+    url: '/articles/self-driving-cars',
+  }
 ];
+
 
 export default function BlogCards() {
   return (
-   <section className={styles.blogSection}>
-          <div className={styles.articlesContainer}>
-            {articles.map((article) => (
-              <div className={styles.articleCard} key={article.id}>
-                <Link href={article.url}>
-                    <img src={article.image} alt={article.title} />
-                    <div>
-                      <h2>{article.title}</h2>
-                      <p className={styles.author}>
-                        by {article.author} on {article.date}
-                      </p>
-                      <p className={styles.excerpt}>{article.excerpt}</p>
-                    </div>
-                </Link>
-              </div>
-            ))}
+    <section className={styles.blogSection}>
+      <h2 className={styles.sectionTitle}>Latest Blog Posts</h2>
+      <div className={styles.articlesContainer}>
+        {articles.map((article) => (
+          <div className={styles.articleCard} key={article.id}>
+            <Link href={article.url}>
+                <img src={article.image} alt={article.title} />
+                <div>
+                  <h3 className={styles.articleTitle}>{article.title}</h3>
+                  <p className={styles.author}>
+                    By {article.author} on {article.date}
+                  </p>
+                </div>
+            </Link>
           </div>
-   </section>
-  )
+        ))}
+      </div>
+    </section>
+  );
 }

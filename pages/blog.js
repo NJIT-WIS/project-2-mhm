@@ -12,8 +12,7 @@ export default function Blog() {
         <title>Next.js Blog</title>
       </Head>
       <NavMenu />
-      <main>
-        <h1>Latest Articles</h1>
+      <main className={styles.container}>
         <BlogCards />
       </main>
       <Footer />
