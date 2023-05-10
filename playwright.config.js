@@ -28,7 +28,7 @@ module.exports = defineConfig({
         ...devices['Desktop Chrome'],
         browserName: 'chromium',
       },
-      outputDir: p ath.join(__dirname, 'reports', 'desktop-chrome'),
+      outputDir: path.join(__dirname, 'reports', 'desktop-chrome'),
     },
     {
       name: 'Mobile iPhone 12',
