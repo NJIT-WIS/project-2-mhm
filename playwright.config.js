@@ -1,3 +1,4 @@
+
 // Import necessary modules and functions
 const { defineConfig, devices } = require('@playwright/test');
 const dotenv = require('dotenv');
