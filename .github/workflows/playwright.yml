@@ -23,8 +23,8 @@ jobs:
       - name: Install dependencies
         run: |
           apt-get update
-          apt-get install -y libgbm-dev chromium-bsu
-          export npm_config_unsafe_perm=true
+          apt-get install -y libgbm-dev
+          apt-get install -y libvpx7 libevent-2.1-7 libopus0 libharfbuzz-icu0 libgstreamer-plugins-base1.0-0 libhyphen0 libmanette-0.2-0 libflite1 libgles2
           npm ci
           npx playwright install chromium
           npm install -g lighthouse
@@ -45,7 +45,7 @@ jobs:
         run: mkdir -p ./test-results
 
       - name: Generate Lighthouse Report
-        run: lighthouse http://localhost:3000 --output html --output-path $(pwd)/test-results/report.html --chrome-flags="--headless --no-sandbox --disable-gpu" --chrome-path=/usr/bin/chromium-browser
+        run:  lighthouse http://localhost:3000 --output html --output-path ./test-results/report.html --chrome-flags="--headless --no-sandbox --disable-gpu"
 
       - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3
