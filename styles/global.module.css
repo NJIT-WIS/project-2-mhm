@@ -1,13 +1,11 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-/* Global Styles */
 .webBody {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
-  padding: 0;
   background-color: #f7f7f7;
   color: #333;
 }
@@ -17,6 +15,7 @@
   font-weight: 700;
   line-height: 1.2;
   color: #4d87c7;
+  padding: 0 2rem; /* Add padding to add more space on left and right sides of text */
 }
 
 .webBody h1 {
@@ -84,4 +83,10 @@
 
 .webBody .section-content {
   line-height: 1.6;
+}
+
+.webBody p{
+
+padding: 0 2rem; /* Add padding to add more space on left and right sides of text */
+
 }

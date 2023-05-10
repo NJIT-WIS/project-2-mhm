@@ -1,0 +1,68 @@
+.form {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #4d87c7;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.form input[type="submit"] {
+  background-color: #4d87c7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #005ea3;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+
+/* signup.module.css */
+
+.form-container {
+  max-width: 500px; /* set a maximum width for the form container */
+  margin: 0 auto; /* center the form horizontally */
+}
+
+.form-field {
+  margin-bottom: 1rem; /* add some margin below each input field */
+  width: 100%; /* set the width of the input fields to 100% */
+  box-sizing: border-box; /* include padding and border in the width */
+  padding: 0.5rem; /* add some padding to the input fields */
+  font-size: 1rem; /* set the font size of the input fields */
+}
+
+.form-field:focus {
+  outline: none; /* remove the default focus outline */
+  border-color: #4d87c7; /* add a custom border color when the input is focused */
+}
