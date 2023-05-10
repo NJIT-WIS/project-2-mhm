@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className={styles.foot}>
       <div className={styles.footerContainer}>
         <div className={styles.footerLogo}>
-          <img src="/mywebclass-logo.png" alt="MyWebClass.org Logo" />
+          <img src="https://cdn4.iconfinder.com/data/icons/education-196/52/Education__EarthGlobe__GraduationCap__GraduationCaps__Planet__Earth__Globe__Tool__Tools-512.png" alt="Logo" className={styles.logo} />
         </div>
         <nav className={styles.footerNav}>
           <ul>
