@@ -20,36 +20,36 @@
 
 .webBody h1 {
   font-size: 3rem;
-  color: #0071c5;
+  color: #4d87c7;
 }
 
 .webBody h2 {
   font-size: 2.5rem;
-  color: #0071c5;
+  color: #4d87c7;
 }
 
 .webBody h3 {
   font-size: 2rem;
-  color: #0071c5;
+  color: #4d87c7;
 }
 
 .webBody h4 {
   font-size: 1.5rem;
-  color: #0071c5;
+  color: #4d87c7;
 }
 
 .webBody h5 {
   font-size: 1.25rem;
-  color: #0071c5;
+  color: #4d87c7;
 }
 
 .webBody h6 {
   font-size: 1rem;
-  color: #0071c5;
+  color: #4d87c7;
 }
 
 .webBody a {
-  color: #ddd;
+  color: #5e9bd4;
   text-decoration: none;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .webBody button {
-  background-color: #0071c5;
+  background-color: #4d87c7;
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -88,32 +88,4 @@
 
 .webBody .section-content {
   line-height: 1.6;
-}
-
-.webBody .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 2rem 0;
-}
-
-.webBody .footer-logo {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-.webBody .footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.webBody .footer-nav-link {
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  color: #fff;
-  text-decoration: none;
-}
-
-.webBody .footer-nav-link:hover {
-  text-decoration: underline;
 }

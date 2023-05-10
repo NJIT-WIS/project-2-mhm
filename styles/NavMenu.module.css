@@ -1,32 +1,66 @@
 .navMenu {
-background-color: #3498db;
-color: white;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1rem;
-margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #c7e6f5;
+  color: #333;
+}
+
+.navMenu img {
+  height: 40px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .navMenu ul {
-color: white;
-display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navMenu li:not(:last-child) {
-margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .navMenu a {
-color: white;
-text-decoration: none;
-font-size: 1.2rem;
+  color: #333;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 1rem;
 }
 
-.navMenu a:hover {
-text-decoration: none;
-color: black;
+/* Optional additional styling for the webBody class */
+
+.webBody .navMenu {
+  background-color: #6fa8dc;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.webBody .navMenu img {
+  height: 60px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.webBody .navMenu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.webBody .navMenu li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.webBody .navMenu a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.webBody .navMenu a:hover {
+  text-decoration: underline;
 }

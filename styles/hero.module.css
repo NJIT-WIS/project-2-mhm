@@ -1,0 +1,49 @@
+/* Hero Banner Styles */
+.heroBanner {
+  background-image: url('https://cvc.edu/wp-content/uploads/2018/05/hero-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroBannerOverlay {
+  background-color: rgba(153, 204, 255, 0.8); /* pastel blue color */
+  text-align: center;
+  padding: 2rem;
+}
+
+.heroBannerOverlay h1 {
+  color: #fff; /* white text color */
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.heroBannerOverlay p {
+  color: #fff; /* white text color */
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.heroBannerOverlay .button {
+  background-color: #0071c5;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* added to remove underline from link */
+}
+
+.heroBannerOverlay .button:hover {
+  background-color: #005ea3; /* darker shade of blue on hover */
+}
