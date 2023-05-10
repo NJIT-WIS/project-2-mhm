@@ -13,12 +13,12 @@ jobs:
       options: --cpus 2 --memory 4G --user root
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: "18.x"
+          node-version: "14.x"
 
       - name: Install dependencies
         run: |
@@ -38,11 +38,14 @@ jobs:
 
       - name: Run Playwright tests
         run: npx playwright test --config=playwright.config.js
+
       - name: Generate Lighthouse Report
         run: |
+          cd ..
           lighthouse http://localhost:3000 --output html --output-path ./test-results/report.html --chrome-flags="--headless --no-sandbox --disable-gpu"
+
       - name: Upload report, screenshots and videos of failed tests
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: test-results
-          path: ./test-results
+          path: ./project-2-mhm/test-results
