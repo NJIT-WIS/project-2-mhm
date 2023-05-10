@@ -2,7 +2,7 @@
     "pages": [
       {
         "path": "/",
-        "title": "MyWebClass.org - Learn Tech Skills"
+        "title": "MyWebClass"
       },
       {
         "path": "/privacy",
@@ -10,7 +10,7 @@
       },
       {
         "path": "/story",
-        "title": "Our Story - MyWebClass.org"
+        "title": "About Us - MyWebClass"
       },
       {
         "path": "/signup",
