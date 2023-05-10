@@ -1,3 +1,5 @@
+process.env.CHROME_PATH = '/usr/bin/chromium-browser';
+
 // Import necessary modules and functions
 const { defineConfig, devices } = require('@playwright/test');
 const dotenv = require('dotenv');
