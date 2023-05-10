@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import NavMenu from '../components/NavMenu';
 import Footer from '../components/Footer';
-import HeroBanner from '../components/HeroBanner';
+import HeroBanner from '../components/heroBanner';
 import TeamPanel from '../components/teamPanel';
 import styles from '../styles/global.module.css';
 
