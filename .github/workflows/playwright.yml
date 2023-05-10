@@ -24,12 +24,10 @@ jobs:
         run: |
           apt-get update
           apt-get install -y libgbm-dev chromium-bsu
-          apt-get install chromium
           export npm_config_unsafe_perm=true
           npm ci
           npx playwright install chromium
-          npm install -g lighthouse
-          npm install -g chrome-launcher axe-core wait-on
+          npm install -g chrome-launcher axe-core chromium wait-on
           npx playwright install-deps
           npm run build --turbo
 
@@ -46,9 +44,8 @@ jobs:
         run: mkdir -p ./test-results
 
       - name: Generate Lighthouse Report
-        env:
-          CHROME_PATH: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
-        run: lighthouse http://localhost:3000 --output html --output-path $(pwd)/test-results/report.html --chrome-flags="--headless --no-sandbox --disable-gpu"
+        run: |
+          lighthouse http://localhost:3000 --output html --output-path ./test-results/report.html --chrome-flags="--headless --no-sandbox --disable-gpu"
 
       - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3
