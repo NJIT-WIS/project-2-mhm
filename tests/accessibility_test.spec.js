@@ -12,12 +12,15 @@ async function checkAccessibility(pageUrl) {
   const page = await browser.newPage();
   await page.goto(pageUrl, { timeout: TIMEOUT });
   const fontSize = await page.$eval('body', (el) => parseFloat(getComputedStyle(el).fontSize));
-  expect(fontSize).toBeGreaterThan(10);
+  expect(fontSize).toBeGreaterThan(14);
+
   // Check Facebook link
   const facebookLink = await page.$('[aria-label="facebook"]');
   expect(facebookLink).toBeTruthy();
+
   await facebookLink.click();
-  const newPage = await browser.waitForTarget(target => target.url().includes('facebook.com'));
+
+  const newPage = await browser.waitForTarget((target) => target.url().includes('facebook.com'));
   const newPageUrl = newPage.url();
   expect(newPageUrl).toContain('facebook.com');
 
