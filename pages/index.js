@@ -11,6 +11,7 @@ export default function Home() {
       <NavMenu />
       <Head>
         <title>MyWebClass</title>
+        <link rel="icon" type="image/png" href="../public/favicon.ico"/>
       </Head>
       <HeroBanner />
       <main>
