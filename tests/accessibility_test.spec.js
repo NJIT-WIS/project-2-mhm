@@ -18,11 +18,19 @@ async function checkAccessibility(pageUrl) {
   const facebookLink = await page.$('[aria-label="facebook"]');
   expect(facebookLink).toBeTruthy();
 
+  // Check linkedin link
+  const linkedinLink = await page.$('[aria-label="linkedin"]');
+  expect(linkedinLink).toBeTruthy();
+
+  // Check twitter link
+  const twitterLink = await page.$('[aria-label="twitter"]');
+  expect(twitterLink).toBeTruthy();
+
   await browser.close();
 }
 
 pages.forEach((page) => {
-  test(`Page "${page.path}" should have the correct font size and Facebook link`, async () => {
+  test(`Page "${page.path}" should have the correct font size and social media`, async () => {
     console.log(page.path);
     const pageUrl = `${config.use.baseURL}${page.path}`;
 

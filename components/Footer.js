@@ -17,12 +17,12 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com" target='_blank'>
+              <a href="https://linkedin.com" target='_blank' aria-label="linkedin">
                 <FaLinkedin className={styles.socialIcon} />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com" target='_blank'>
+              <a href="https://twitter.com" target='_blank' aria-label="twitter">
                 <FaTwitter className={styles.socialIcon} />
               </a>
             </li>
