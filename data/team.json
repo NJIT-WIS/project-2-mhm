@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Mike Massotto",
+    "position": "Front-End Developer",
+    "image": "/mike.jpg",
+    "bio": "22, Information Technology Undergraduate of NJIT"
+  },
+  {
+    "name": "Mithil Patel",
+    "position": "Project Manager, Playwright Tester",
+    "image": "/mithil.jpg",
+    "bio": "[age],[degree]"
+  },
+  {
+    "name": "Hehjun Lim",
+    "position": "SEO and Analytics Manager",
+    "image": "/hehjun.jpg",
+    "bio": "[age], [degree]"
+  }
+]

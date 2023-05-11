@@ -1,26 +1,55 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import NavMenu from '../components/NavMenu';
+import Footer from '../components/Footer';
+import HeroBanner from '../components/heroBanner';
+import TeamPanel from '../components/teamPanel';
+import styles from '../styles/global.module.css';
+import teamData from '../data/team.json';
+import faqData from '../data/faq.json';
 
 export default function Story() {
   return (
-    <>
-      <Head>
-        <title>Our Story - MyWebClass.org</title>
-      </Head>
+    <div className={styles.webBody}>
       <NavMenu />
+      <Head>
+        <title>About Us - MyWebClass</title>
+      </Head>
+      <HeroBanner />
       <main>
-        <section>
-          <h1>Our Story</h1>
-          <p>MyWebClass.org was founded in 2021 with the mission to provide affordable and accessible tech education to anyone who wants to learn. Our founders, Jane and John Doe, both had careers in tech and were passionate about giving back to the community by sharing their knowledge and expertise.</p>
-          <p>At MyWebClass.org, we believe that everyone should have the opportunity to learn and succeed in tech. We offer a wide range of courses in programming, web development, graphic design, and more, designed to help you achieve your goals and advance your career.</p>
-          <h2>Our Vision</h2>
-          <p>Our vision is to create a world where tech education is accessible to everyone, regardless of their background or financial situation. We believe that by providing affordable and high-quality education, we can empower individuals and communities to achieve their full potential.</p>
+        <section className={styles.section}>
+          <div className={styles.container}>
+            <h1 className={styles.sectionHeading}>About Us</h1>
+            <p className={styles.sectionContent}>MyWebClass is a platform that aims to be a top distributor of tech news for the people. Our mission is to provide our readers with the latest information on current events and tech breakthroughs and how they can better the world.</p>
+            <p className={styles.sectionContent}>We are passionate about technology and believe that it has the power to transform lives and shape the future. Our team of writers and editors are dedicated to bringing you the most accurate, engaging and informative content on the web.</p>
+          </div>
+        </section>
+        <section className={styles.section}>
+          <div className={styles.container}>
+            <div className={styles.row}>
+              <div className={`${styles.column} ${styles.teamColumn}`}>
+                <h2 className={styles.sectionHeading}>Meet the Team</h2>
+                <div className={styles.teamGrid}>
+                  {teamData.map(member => (
+                    <TeamPanel key={member.name} name={member.name} position={member.position} image={member.image} bio={member.bio} />
+                  ))}
+                </div>
+              </div>
+              <div className={`${styles.column} ${styles.faqColumn}`}>
+                <h2 className={styles.sectionHeading}>Frequently Asked Questions</h2>
+                <div className={styles.faqGrid}>
+                  {faqData.map(faq => (
+                    <div key={faq.question}>
+                      <h4 className={styles.faqQuestion}>{faq.question}</h4>
+                      <p className={styles.faqAnswer}>{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
-      <footer>
-        <p>&copy; MyWebClass.org 2021. All rights reserved.</p>
-      </footer>
-    </>
+      <Footer />
+    </div>
   );
 }

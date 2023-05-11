@@ -4,20 +4,27 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "npx playwright test"
+    "test": "npx playwright test tests"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
     "csv-parser": "^3.0.0",
     "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",
     "fs": "0.0.1-security",
     "glob": "^9.3.2",
     "gray-matter": "^4.0.3",
+    "js-cookie": "^3.0.5",
     "next": "latest",
     "next-share": "^0.20.0",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-ga4": "^2.1.0",
+    "react-router-dom": "^6.11.1",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1"
   },

@@ -1,22 +1,22 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import NavMenu from '../components/NavMenu';
 import Footer from '../components/Footer';
 import HeroBanner from '../components/heroBanner';
-import styles from '../styles/global.module.css';
 import Newsletter from './NewsletterForm';
 import SEO from '../components/SEO';
 
+import Cookie from '../components/cookie';
+import styles from '../styles/global.module.css';
 
 export default function Home() {
   return (
     <div className={styles.webBody}>
-      <NavMenu />
        <SEO title="MyWebClass" description="Create a network of professionals dedicated to revolutionizing education and preparing students for success in the AI-driven world." />
       <Head>
         <title>MyWebClass</title>
-        <link rel="icon" type="image/png" href="../public/favicon.ico"/>
+        <link rel="icon" type="image/png" href="/favicon.ico" />
       </Head>
+      <NavMenu />
       <HeroBanner />
       <main>
         <section>
@@ -27,6 +27,7 @@ export default function Home() {
       </main>
       <SignUpForm />
       <Footer />
+      <Cookie />
     </div>
   );
 }

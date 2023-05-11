@@ -1,6 +1,6 @@
-require('dotenv').config()
+require('dotenv').config();
 
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   webpack: (config, { isServer }) => {
     if (!isServer) {
@@ -9,7 +9,7 @@ const nextConfig = {
       }
     }
     return config
-  }
+  },
+  basePath: '',
 }
 
-module.exports = nextConfig

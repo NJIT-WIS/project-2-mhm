@@ -17,7 +17,6 @@
 
 # misc
 .DS_Store
-.env*
 
 # debug
 npm-debug.log*
@@ -27,3 +26,6 @@ yarn-error.log*
 /playwright-report/
 /playwright/.cache/
 .vercel
+/test-results/
+/playwright-report/
+/playwright/.cache/

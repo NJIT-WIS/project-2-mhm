@@ -2,12 +2,23 @@
     "pages": [
       {
         "path": "/",
-        "title": "MyWebClass.org"
+        "title": "MyWebClass"
       },
       {
-        "path": "/about",
-        "title": "MyWebClass.org | About"
+        "path": "/privacy",
+        "title": "MyWebClass Privacy Policy"
+      },
+      {
+        "path": "/story",
+        "title": "About Us - MyWebClass"
+      },
+      {
+        "path": "/signup",
+        "title": "MyWebClass.org - Sign Up for Updates"
+      },
+      {
+        "path": "/blog",
+        "title": "Next.js Blog"
       }
     ]
 }
-  

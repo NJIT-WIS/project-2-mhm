@@ -7,17 +7,20 @@
 .articlesContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: stretch;
   gap: 2rem;
   margin-top: 2rem;
+  max-width: 1400px;
 }
 
+
 .articleCard {
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
+  width: 25%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -26,11 +29,25 @@
 }
 
 .articleCard img {
-  height: 200px;
+  height: auto;
   object-fit: cover;
   width: 100%;
 }
 
+.articleCard a {
+  color: #0071c5;
+  display: block;
+  text-decoration: none;
+}
+
+.articleCard a:hover {
+  text-decoration: underline;
+}
+
 .articleCard div {
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+.excerpt {
+  color: #0071c5;
 }
