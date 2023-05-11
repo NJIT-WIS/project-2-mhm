@@ -26,15 +26,6 @@ jobs:
       - name: Create the build
         run: npx next build
 
-      - name: Check and kill process on port 3000
-        run: |
-          sudo fuser -k 3000/tcp || true
-      - name: Start the application
-        run: |
-          export DISPLAY=:1
-          echo "Starting the application..."
-          npm run start & npx wait-on --timeout 50000 http://0.0.0.0:3000
-          echo "Application started."
       - name: Run Playwright tests
         run: npx playwright test --config=playwright.config.js
 
