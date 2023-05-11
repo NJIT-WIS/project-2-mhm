@@ -6,11 +6,13 @@ import TeamPanel from '../components/teamPanel';
 import styles from '../styles/global.module.css';
 import teamData from '../data/team.json';
 import faqData from '../data/faq.json';
+import SEO from '../components/SEO';
 
 export default function Story() {
   return (
     <div className={styles.webBody}>
       <NavMenu />
+      <SEO title="MyWebClass" description="Create a network of professionals dedicated to revolutionizing education and preparing students for success in the AI-driven world." />
       <Head>
         <title>About Us - MyWebClass</title>
       </Head>
