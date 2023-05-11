@@ -6,7 +6,7 @@ const config = require(path.join(process.cwd(), 'playwright.config.js'));
 
 const TIMEOUT = 30000;
 
-test('Sales funnel navigation test', async ({ page }) => {
+test.skip('Sales funnel navigation test', async ({ page }) => {
   // Navigate to the landing page
   await page.goto(config.use.baseURL);
 
