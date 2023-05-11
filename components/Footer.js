@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styles from '../styles/foot.module.css';
-import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -10,26 +9,24 @@ export default function Footer() {
         <div className={styles.footerLogo}>
           <img src="https://cdn4.iconfinder.com/data/icons/education-196/52/Education__EarthGlobe__GraduationCap__GraduationCaps__Planet__Earth__Globe__Tool__Tools-512.png" alt="Logo" className={styles.logo} />
         </div>
-        <div
-          style={{
-            marginTop: 10,
-            marginBottom: 15,
-            height: 40,
-            flexDirection: 'row',
-            alignItems: 'center'
-          }}
-        >
-          <ButtonGroup aria-label="Basic example">
-            <a href="https://facebook.com" target='_blank'>
-              <Button variant="secondary">Facebook</Button>
-            </a>
-            <a href="https://linkedin.com" target='_blank'>
-              <Button variant="secondary">LinkedIn</Button>
-            </a>
-            <a href="https://twitter.com" target='_blank'>
-            <Button variant="secondary">Twitter</Button>
-            </a>
-          </ButtonGroup>
+        <div className={styles.footerButtonGroup}>
+          <ul className={styles.socialMedia}>
+            <li>
+              <a href="https://facebook.com" target='_blank'>
+                <FaFacebook className={styles.socialIcon} />
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" target='_blank'>
+                <FaLinkedin className={styles.socialIcon} />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target='_blank'>
+                <FaTwitter className={styles.socialIcon} />
+              </a>
+            </li>
+          </ul>
         </div>
         <nav className={styles.footerNav}>
           <ul>
