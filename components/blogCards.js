@@ -72,14 +72,13 @@ const articles = [
 export default function BlogCards() {
   return (
     <section className={styles.blogSection}>
-      <h2 className={styles.sectionTitle}>Latest Blog Posts</h2>
       <div className={styles.articlesContainer}>
         {articles.map((article) => (
           <div className={styles.articleCard} key={article.id}>
             <Link href={article.url}>
                 <img src={article.image} alt={article.title} />
                 <div>
-                  <h3 className={styles.articleTitle}>{article.title}</h3>
+                  <h4 className={styles.articleTitle}>{article.title}</h4>
                   <p className={styles.author}>
                     By {article.author} on {article.date}
                   </p>

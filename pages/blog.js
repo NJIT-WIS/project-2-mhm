@@ -13,6 +13,7 @@ export default function Blog() {
       </Head>
       <NavMenu />
       <main className={styles.container}>
+      <h2>Latest Blog Posts</h2>
         <BlogCards />
       </main>
       <Footer />
