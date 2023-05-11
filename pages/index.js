@@ -1,18 +1,18 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import NavMenu from '../components/NavMenu';
 import Footer from '../components/Footer';
 import HeroBanner from '../components/heroBanner';
+import Cookie from '../components/Cookie';
 import styles from '../styles/global.module.css';
 
 export default function Home() {
   return (
     <div className={styles.webBody}>
-      <NavMenu />
       <Head>
         <title>MyWebClass</title>
-        <link rel="icon" type="image/png" href="../public/favicon.ico"/>
+        <link rel="icon" type="image/png" href="/favicon.ico" />
       </Head>
+      <NavMenu />
       <HeroBanner />
       <main>
         <section>
@@ -22,6 +22,7 @@ export default function Home() {
         </section>
       </main>
       <Footer />
+      <Cookie />
     </div>
   );
 }
