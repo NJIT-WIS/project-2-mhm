@@ -5,7 +5,6 @@ import SEO from '../components/SEO';
 import Footer from '../components/Footer';
 import styles from '../styles/global.module.css';
 import Policy from '../components/Policy';
-import SEO from '../components/SEO';
 
 export default function Privacy() {
   return (
