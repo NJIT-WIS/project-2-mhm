@@ -4,29 +4,8 @@ import Footer from '../components/Footer';
 import HeroBanner from '../components/heroBanner';
 import TeamPanel from '../components/teamPanel';
 import styles from '../styles/global.module.css';
-
-const teamData = [
-  {
-    name: 'Mike Massotto',
-    position: 'Front-End Developer',
-    image: '/mike.jpg',
-    bio: '22, Information Technology Undergraduate of NJIT'
-  },
-  {
-    name: 'Mithil Patel',
-    position: 'Project Manager, Playwright Tester',
-    image: '/mithil.jpg',
-    bio: '[age],[degree]'
-    },
-  {
-    name: 'Hehjun Lim',
-    position: 'SEO and Analytics Manager',
-    image: '/hehjun.jpg',
-    bio: '[age], [degree]'
-  }
-  // ... add more team members as needed
-];
-
+import teamData from '../data/team.json';
+import faqData from '../data/faq.json';
 
 export default function Story() {
   return (
@@ -46,11 +25,26 @@ export default function Story() {
         </section>
         <section className={styles.section}>
           <div className={styles.container}>
-            <h2 className={styles.sectionHeading}>Meet the Team</h2>
-            <div className={styles.teamGrid}>
-              {teamData.map(member => (
-                <TeamPanel key={member.name} name={member.name} title={member.title} imgSrc={member.imgSrc} />
-              ))}
+            <div className={styles.row}>
+              <div className={`${styles.column} ${styles.teamColumn}`}>
+                <h2 className={styles.sectionHeading}>Meet the Team</h2>
+                <div className={styles.teamGrid}>
+                  {teamData.map(member => (
+                    <TeamPanel key={member.name} name={member.name} position={member.position} image={member.image} bio={member.bio} />
+                  ))}
+                </div>
+              </div>
+              <div className={`${styles.column} ${styles.faqColumn}`}>
+                <h2 className={styles.sectionHeading}>Frequently Asked Questions</h2>
+                <div className={styles.faqGrid}>
+                  {faqData.map(faq => (
+                    <div key={faq.question}>
+                      <h4 className={styles.faqQuestion}>{faq.question}</h4>
+                      <p className={styles.faqAnswer}>{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
