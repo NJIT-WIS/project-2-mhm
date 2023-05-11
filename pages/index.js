@@ -2,7 +2,7 @@ import Head from 'next/head';
 import NavMenu from '../components/NavMenu';
 import Footer from '../components/Footer';
 import HeroBanner from '../components/heroBanner';
-import Cookie from '../components/Cookie';
+import Cookie from '../components/cookie';
 import styles from '../styles/global.module.css';
 
 export default function Home() {
