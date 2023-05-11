@@ -12,7 +12,7 @@ export default function Footer() {
         <div className={styles.footerButtonGroup}>
           <ul className={styles.socialMedia}>
             <li>
-              <a href="https://facebook.com" target='_blank'>
+              <a href="https://facebook.com" target='_blank' aria-label="facebook">
                 <FaFacebook className={styles.socialIcon} />
               </a>
             </li>
