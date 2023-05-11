@@ -17,7 +17,9 @@ async function checkAccessibility(pageUrl) {
  // Check Facebook link
   const facebookLink = await page.$('[aria-label="facebook"]');
   expect(facebookLink).toBeTruthy();
-
+  await facebookLink.click();
+  const newUrl = page.url();
+  expect(newUrl).toContain('facebook.com');
   await browser.close();
 }
 
