@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from '../styles/signup.module.css';
 import Head from 'next/head';
+import Newsletter from './NewsletterForm';
 
 export default function SignUp() {
   return (
@@ -25,6 +26,7 @@ export default function SignUp() {
         <input type="email" id="email" name="email" placeholder="Enter your email" required className={styles["form-field"]} />
         <input type="submit" value="Join Now" className={styles["form-field"]} />
       </form>
+      <Newsletter/>
     </div>
   );
 }
