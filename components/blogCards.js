@@ -9,7 +9,7 @@ export default function BlogCards() {
         {articles.map((article) => (
           <div className={styles.articleCard} key={article.id}>
             <Link href={`/articles/${article.id}`}>
-                <img src={article.image} alt={article.title} />
+                {/* <img src={article.image} alt={article.title} /> */}
                 <div>
                   <h4 className={styles.articleTitle}>{article.title}</h4>
                   <p className={styles.author}>
