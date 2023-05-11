@@ -19,13 +19,6 @@ export default function SignUp() {
           }}
         />
       </Head>
-      <form action="/submit-form.php" method="post" className={styles["form-container"]}>
-        <label htmlFor="name">Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required className={styles["form-field"]} />
-        <label htmlFor="email">Your Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required className={styles["form-field"]} />
-        <input type="submit" value="Join Now" className={styles["form-field"]} />
-      </form>
       <Newsletter/>
     </div>
   );
